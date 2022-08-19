@@ -52,6 +52,9 @@ a {
     text-decoration: none;
 }
 
+input {outline:none;}
+
+
 /* Settings */
 body {
     font-family: 'lato';
@@ -106,9 +109,74 @@ body {
 /* Intro */
 
 .intro {
-    height: 100vh;
+    min-height: 100vh;
     background-image: url(../img/intro-bg.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    padding-top: 300px;
+}
+
+.intro-title {
+    font-family: 'lato';
+    font-weight: 500;
+    font-size: 50px;
+    line-height: 60px;
+    color: white;
+    width: 619px;
+    margin-bottom: 22px;
+}
+
+.intro-subtitle {
+    font-family: 'lato';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: white;
+    width: 580px;
+    margin-bottom: 59px;
+}
+
+.search-info {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.search-input {
+    width: 280px;
+    background-color: transparent;
+    background: url(../img/svg/elips-input.svg) no-repeat left 6px;
+    background-size: 20px;
+    border: 0;
+    border-bottom: 2px solid #BFC0C5;
+    padding-left: 43px;
+    margin-right: 60px;
+    padding-bottom: 22px;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 500;
+    color: white;
+}
+
+.search-input::placeholder {
+    color: white;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 500;
+}
+
+.search-btn {
+    padding: 15px 39px;
+    background-color: #1B7DFF;
+    border: 0;
+    color: white;
+    text-transform: uppercase;
+    font-family: 'lato';
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+}
+
+.search-btn:hover, .search-btn:focus {
+    background-color: #1965c8;
 }
