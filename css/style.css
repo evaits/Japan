@@ -76,6 +76,33 @@ body {
     margin: 0 auto;
 }
 
+.container-down {
+    max-width: 1262px;
+    background-color: white;
+    margin: 0 auto;
+}
+
+.section-title {
+    font-family: 'Lato';
+    font-weight: 500;
+    font-size: 35px;
+    line-height: 42px;
+    color: #102746;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.section-title::after {
+    display: block;
+    content: "";
+    width: 253px;
+    height: 3px;
+    background-color: #006DFE;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
 /* header */
 
 .header {
@@ -106,6 +133,9 @@ body {
     font-size: 18px;
     line-height: 24px;
     color: white;
+    transition: opacity 0.1s linear;
+
+
 }
 
 .header-link:hover, .header-link:focus {
@@ -121,6 +151,7 @@ body {
     background-position: center;
     background-size: cover;
     padding-top: 200px;
+    padding-bottom: 223px;
 }
 
 .intro-title {
@@ -181,6 +212,7 @@ body {
     font-weight: 500;
     font-size: 24px;
     line-height: 29px;
+    transition: background-color 0.2s linear;
 }
 
 .search-btn:hover, .search-btn:focus {
@@ -188,6 +220,10 @@ body {
 }
 
 /* Benefits */
+
+.benefits {
+    margin-bottom: 131px;
+}
 
 .benefits-container {
     max-width: 1262px;
@@ -221,6 +257,7 @@ body {
 
 .benefits-card {
     grid-column: span 1;
+    margin-bottom: 112px;
 }
 
 .benefits-card-pic {
@@ -253,8 +290,161 @@ body {
     line-height: 24px;
     color:#006DFE;
     text-transform: uppercase;
+    padding-right: 59px;
+    background: url(../img/svg/arrow.svg) no-repeat 95% center;
+    transition: background-position 0.2s linear;
 }
 
 .benefits-card-link:hover, .benefits-card-link:focus {
-    color: #054dab;
+    background: url(../img/svg/arrow.svg) no-repeat right center;
+}
+
+/* Places */
+
+.places {
+    margin-bottom: 131px;
+}
+
+.places-header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 39px;
+
+}
+
+.places-title {
+    margin-right: 15px;
+}
+
+.places-link {
+    font-family: 'lato';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color:#006DFE;
+    text-transform: uppercase;
+    padding-right: 59px;
+    background: url(../img/svg/arrow.svg) no-repeat 95% center;
+    transition: background-position 0.2s linear;
+}
+
+.places-link:hover, .places-link:focus {
+    background: url(../img/svg/arrow.svg) no-repeat right center;
+}
+
+.places-cards {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 10px;
+}
+
+.places-card{
+    position: relative;
+    overflow: hidden;
+}
+
+.places-card::after {
+    display: block;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: rgba(21, 24, 36, 0.4);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+
+.places-card:hover .places-card-img {
+    transform: scale(1.05);
+}
+
+.places-card-size-lg {
+    grid-column: span 3;
+}
+
+.places-card-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all 0.5s;
+}
+
+.places-card-text {
+    z-index: 3;
+    position: absolute;
+    font-family: 'lato';
+    font-weight: 600;
+    font-size: 50px;
+    line-height: 60px;
+    color: white;
+    bottom: 27px;
+    left: 29px;
+}
+
+.places-card-link {
+    position: absolute;
+    z-index: 4;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;   
+}
+
+.places-card-size-sl {
+    grid-column: span 2;
+}
+
+/* Tour */
+
+.tours {
+    margin-bottom: 139px;
+}
+
+.tours-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 0 108px;
+    align-items: center;
+}
+
+.tour-img {
+    margin-bottom: 77px;
+}
+
+.tour-title {
+    font-family: 'lato';
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 40px;
+    color:#102746;
+    
+}
+
+.tour-text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color:#102746;
+    width: 519px;
+    margin-top: 85px;
+    margin-bottom: 58px;
+}
+
+.tour-link {
+    font-family: 'lato';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color:#006DFE;
+    text-transform: uppercase;
+    padding-right: 59px;
+    background: url(../img/svg/arrow.svg) no-repeat 95% center;
+    transition: background-position 0.2s linear;
+}
+
+.tour-link:hover, .tour-link:focus {
+    background: url(../img/svg/arrow.svg) no-repeat right center;
 }
