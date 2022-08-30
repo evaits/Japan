@@ -202,7 +202,7 @@ body {
 
 .intro {
     min-height: 120vh;
-    background-image: url(../img/intro-bg.jpg);
+    background-image: url(../img/intro-bg-min.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
